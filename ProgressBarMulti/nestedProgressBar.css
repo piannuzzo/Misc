@@ -1,0 +1,55 @@
+BODY {
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+#progressBarContainer {
+	height: 30px;
+	margin: 20px;
+	width: 600px;
+}
+
+.pBarSizer {
+	position: relative;
+	top: 0px;
+}
+
+.pBar {
+	position: absolute;
+	width: 100%;
+}
+
+.pBarLeft, .pBarRight {
+	float: left;
+	height: 100%;
+	position: relative;
+}
+
+.pBarLeftInner {
+	height: 100%;
+	right: 0;
+	position: absolute;
+}
+
+.pBarMiddle {
+	float: left;
+	height: 100%;
+	position: relative;
+}
+
+.pBarRightInner {
+	height: 100%;
+	position: absolute;
+}
+
+.pBar SPAN {
+	margin-right: .5em;
+	position: absolute;
+	right: 0px;
+	/*visibility: hidden;*/
+}
+
+.slider {
+	margin: 20px 0px 0px 20px;
+	width: 600px;
+}

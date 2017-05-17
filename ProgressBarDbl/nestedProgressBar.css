@@ -1,0 +1,53 @@
+BODY {
+	font-family: tahoma;
+}
+
+.pBar {
+	margin: 20px;
+	height: 30px;
+	position: relative;
+	width: 600px;
+}
+
+.pBar1, .pBar2, .pBar3 {
+	border-radius: 9px;
+	height: 100%;
+	position: absolute;
+}
+
+.pBar1 {
+	background: #EEE;
+	width: 100%;
+}
+
+.pBar2 {
+	background: rgb(182, 215, 168);
+	width: 66%;
+}
+
+.pBar3 {
+	background: rgb(106, 168, 79);
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	position: relative;
+	width: 33%;
+}
+
+.pBar2 SPAN, .pBar3 SPAN {
+	float: right;
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+.pBar2 SPAN {
+	color: rgb(106, 168, 79);
+}
+
+.pBar3 SPAN {
+	color: rgb(182, 215, 168);
+}
+
+.slider {
+	margin: 20px 0px 0px 20px;
+	width: 600px;
+}

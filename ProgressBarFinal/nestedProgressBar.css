@@ -1,0 +1,63 @@
+BODY {
+	font-family: tahoma;
+}
+
+.template {
+	display: none;
+}
+
+.pBar {
+	margin: 20px;
+	height: 30px;
+	position: relative;
+	width: 600px;
+}
+
+.pBarStatic, .pBarOuter, .pBarInnerSizer {
+	border-radius: 9px;
+	height: 100%;
+	position: absolute;
+}
+
+.pBarInnerSizer {
+  width: 594px;
+  height: 24px;
+  left: 3px;
+  top: 3px;
+}
+
+.pBarStatic {
+	background: #EEE;
+	width: 100%;
+}
+
+.pBarOuter {
+	background: rgb(182, 215, 168);
+}
+
+.pBarInner {
+	background: rgb(106, 168, 79);
+	border-radius: 6px;
+  height: 100%;
+}
+
+.pBarOuter SPAN, .pBarInner SPAN {
+	display: none;
+	float: right;
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+.pBarOuter SPAN {
+	color: rgb(106, 168, 79);
+}
+
+.pBarInner SPAN {
+	color: rgb(182, 215, 168);
+  line-height: 24px;
+}
+
+.slider {
+	margin: 20px 0px 0px 20px;
+	width: 600px;
+}

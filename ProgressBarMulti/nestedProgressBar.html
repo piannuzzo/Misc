@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Progress Bar - Multi</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="nestedProgressBar.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="nestedProgressBar.css">
+</head>
+<body>
+
+<div id="progressBarContainer"></div>
+<div id="pBarSlider" class="slider"></div>
+
+<div id="progressBarTemplate">
+	<div class="pBar">
+		<div class="pBarLeft">
+			<div class="pBarLeftInner"></div>
+		</div>
+		<div class="pBarMiddle"></div>
+		<div class="pBarRight">
+			<div class="pBarRightInner">
+				<span class="pctText">&nbsp;</span>  <!-- default value is to get SPAN height onload -->
+			</div>
+		</div>
+	</div>
+	<div class="pBarSizer"></div>
+</div>
+
+
+</body>
+</html>

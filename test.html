@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+var Out = function() {
+	var out = [];
+	this.clear = function() {out = []; }
+	this.get = function() { var ret = out.join(""); ret = ret.replace(/(><)/g, ">\r\n<"); return ret; }
+	this.put = function(s) { out.push(s); }
+}
+var out = new Out();
+
+out.put("<html>");
+out.put("<head>");
+out.put("<title>TEST PAGE</title>");
+out.put("</head>");
+out.put("<body>");
+out.put("<h1>Hello World</h1>");
+out.put("</body>");
+out.put("</html>");
+	
+document.write(out.get());
+console.log(out.get());
+
+</script>
