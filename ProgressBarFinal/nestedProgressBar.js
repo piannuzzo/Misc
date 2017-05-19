@@ -11,7 +11,7 @@ jQuery.extend(this, {
 	doubleBar: false
 	}, opts);
 
-this.construct = function() {
+this.init = function() {
 	self.element = jQuery("#pBarTemplate").find(".pBar").clone(true).removeClass("template");
 	self.pBarStatic = self.element.find(".pBarStatic");
 	self.pBarOuter = self.element.find(".pBarOuter");
@@ -19,6 +19,10 @@ this.construct = function() {
 	self.pBarInner = self.element.find(".pBarInner");
 	self.pBarOuterText = self.pBarOuter.find("span");
 	self.pBarInnerText = self.pBarInner.find("span");
+
+	if (!self.doubleBar) {
+		self.offset = 0;
+	}
 
 	self.element.appendTo(self.container);
 	self.initElements();
@@ -118,7 +122,7 @@ this.checkOuterBarText = function() {
 	});
 };
 
-self.construct();
+self.init();
 
 self.returnObj.setProgress = self.setProgress;
 
@@ -138,12 +142,11 @@ var MyApp = {
 		});
 		this.pb2 = new ProgressBar({
 			container: jQuery("#progressBarContainer2"),
-			doubleBar: false,
+			doubleBar: true,
 			offset: 3
 		});
 		this.pb3 = new ProgressBar({
-			container: jQuery("#progressBarContainer3"),
-			offset: 3
+			container: jQuery("#progressBarContainer3")
 		});
 		this.initSliders();
 	},
